@@ -1,97 +1,158 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/feature_File/Availability.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/resources/feature_File/Product.feature");
 formatter.feature({
   "line": 1,
-  "name": "Broadband and tv Packages  Availability Functionality",
-  "description": "User want to check which broadband and TV packages are available as per user postcode.",
-  "id": "broadband-and-tv-packages--availability-functionality",
+  "name": "Search the product and add in a Basket",
+  "description": "User want to search for a \"Dell Laptop\" product and add product in a basket.",
+  "id": "search-the-product-and-add-in-a-basket",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 18520357100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "User is on a HomePage and accept all cookies",
+formatter.scenarioOutline({
+  "line": 7,
+  "name": "User add product in a search field.",
   "description": "",
-  "id": "broadband-and-tv-packages--availability-functionality;user-is-on-a-homepage-and-accept-all-cookies",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
+      "line": 6,
       "name": "@Smoke"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "User Enter PostCode \"Ha0 2hl\" on Postcode field",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "Click on search button",
-  "keyword": "And "
-});
-formatter.step({
   "line": 8,
-  "name": "User select the address from list",
-  "keyword": "When "
+  "name": "User enter desire \"\u003cProduct\u003e\" name name in a search field",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 9,
-  "name": "click on next button",
-  "keyword": "And "
+  "name": "User click on a SearchButton",
+  "keyword": "When "
 });
 formatter.step({
   "line": 10,
-  "name": "User can see the available Packages",
+  "name": "User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e",
   "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User select RamSize",
+  "keyword": "When "
+});
+formatter.examples({
+  "line": 13,
+  "name": "",
+  "description": "",
+  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;",
+  "rows": [
+    {
+      "cells": [
+        "Product"
+      ],
+      "line": 15,
+      "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;1"
+    },
+    {
+      "cells": [
+        "Dell Laptop"
+      ],
+      "line": 16,
+      "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 10418883901,
+  "status": "passed"
+});
+formatter.background({
+  "line": 4,
+  "name": "User is on a HomePage",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "User add product in a search field.",
+  "description": "",
+  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@Smoke"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "User enter desire \"Dell Laptop\" name name in a search field",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "User click on a SearchButton",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User select RamSize",
+  "keyword": "When "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Ha0 2hl",
-      "offset": 21
+      "val": "Dell Laptop",
+      "offset": 19
     }
   ],
-  "location": "AvailabilityStepdefs.userEnterPostCodeOnPostcodeField(String)"
+  "location": "ProductStepdefs.userEnterDesireNameNameInASearchField(String)"
 });
 formatter.result({
-  "duration": 15601684900,
+  "duration": 998614500,
   "status": "passed"
 });
 formatter.match({
-  "location": "AvailabilityStepdefs.clickOnSearchButton()"
+  "location": "ProductStepdefs.userClickOnASearchButton()"
 });
 formatter.result({
-  "duration": 5485988600,
+  "duration": 3479508399,
   "status": "passed"
 });
 formatter.match({
-  "location": "AvailabilityStepdefs.userSelectTheAddressFromList()"
+  "arguments": [
+    {
+      "val": "Dell Laptop",
+      "offset": 43
+    }
+  ],
+  "location": "ProductStepdefs.userIsOnAResultPageVerifyTheText(String)"
 });
 formatter.result({
-  "duration": 5952410300,
-  "status": "passed"
+  "duration": 315643601,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[\"Dell Laptop\"]\u003e but was:\u003c[Dell Laptop]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.amazon.pages.Product.userIsOnAResultPage(Product.java:41)\r\n\tat com.amazon.step_Def.ProductStepdefs.userIsOnAResultPageVerifyTheText(ProductStepdefs.java:36)\r\n\tat ✽.Then User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e(src/test/java/resources/feature_File/Product.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "AvailabilityStepdefs.clickOnNextButton()"
+  "location": "ProductStepdefs.userSelectRamSize()"
 });
 formatter.result({
-  "duration": 13106269000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AvailabilityStepdefs.userCanSeeTheAvailablePackages()"
-});
-formatter.result({
-  "duration": 570367500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1607132800,
+  "duration": 2049198301,
   "status": "passed"
 });
 });
