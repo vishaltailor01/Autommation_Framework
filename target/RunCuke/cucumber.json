@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18520357100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User is on a HomePage and accept all cookies",
+        "description": "",
+        "id": "broadband-and-tv-packages--availability-functionality;user-is-on-a-homepage-and-accept-all-cookies",
+        "after": [
+          {
+            "result": {
+              "duration": 1607132800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15601684900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enter PostCode \"Ha0 2hl\" on Postcode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha0 2hl",
+                  "offset": 21
+                }
+              ],
+              "location": "AvailabilityStepdefs.userEnterPostCodeOnPostcodeField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5485988600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on search button",
+            "match": {
+              "location": "AvailabilityStepdefs.clickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5952410300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User select the address from list",
+            "match": {
+              "location": "AvailabilityStepdefs.userSelectTheAddressFromList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13106269000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on next button",
+            "match": {
+              "location": "AvailabilityStepdefs.clickOnNextButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 570367500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User can see the available Packages",
+            "match": {
+              "location": "AvailabilityStepdefs.userCanSeeTheAvailablePackages()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Broadband and tv Packages  Availability Functionality",
+    "description": "User want to check which broadband and TV packages are available as per user postcode.",
+    "id": "broadband-and-tv-packages--availability-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/feature_File/Availability.feature"
+  }
+]
