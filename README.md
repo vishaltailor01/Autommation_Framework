@@ -32,8 +32,9 @@ Then is the outcome. It’s the behaviour we expect from the system when this ac
 ## Technologies Used:
 * Selenium WebDriver
 * JDK (Java Development Kit)
-* JUnit (Unit Framework) - Data Driven Approach
-* Log4j (logging API) • Maven (Build Automation Tool)
+* JUnit (Unit Framework) 
+* Log4j (logging API) 
+* Maven (Build Automation Tool)
 * Extent Report
 * Cucumber (write the test case in feature file help of gherkin language)
 * Browser - Google Chrome/FireFox
