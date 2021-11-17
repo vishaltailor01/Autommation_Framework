@@ -47,5 +47,5 @@ Then is the outcome. It’s the behaviour we expect from the system when this ac
 * Jenkins - Continuous Integration Tool
 * git and GITHub Repo (Code Versioning Tool)
 
-Steps to clone execute the tests git clone 
+Steps to clone execute the tests git clone https://github.com/vishaltailor01/cloudPay
 
