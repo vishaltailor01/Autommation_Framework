@@ -2,94 +2,132 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 1,
   "name": "Search the product and add in a Basket",
-  "description": "User want to search for a \"Dell Laptop\" product and add product in a basket.",
+  "description": "1. Search for a “Dell Laptop”\r\n2. Refine your search by clicking on 4GB in the left filter panel\r\n3. Pick a “2020 Newest Dell Inspiron 15 3000 PC Laptop”\r\n4. Check the price is $373.00\r\n5. Add the laptop to your basket",
   "id": "search-the-product-and-add-in-a-basket",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 7,
-  "name": "User add product in a search field.",
+  "line": 9,
+  "name": "User want to search Laptop Product and add in to basket .",
   "description": "",
-  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.",
+  "id": "search-the-product-and-add-in-a-basket;user-want-to-search-laptop-product-and-add-in-to-basket-.",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 6,
+      "line": 8,
       "name": "@Smoke"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "User enter desire \"\u003cProduct\u003e\" name name in a search field",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User click on a SearchButton",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e",
+  "line": 12,
+  "name": "User is on a Result Page verify the text \"Dell Laptop\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User select RamSize",
   "keyword": "When "
 });
+formatter.step({
+  "line": 14,
+  "name": "User click on next page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "user select the product",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "User is on product Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User verify the price",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User click on add to cart",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "User click on cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "verify product is add on a cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User enter \"Monitor\" in a search field",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "User add product in basket",
+  "keyword": "And "
+});
 formatter.examples({
-  "line": 13,
+  "line": 24,
   "name": "",
   "description": "",
-  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;",
+  "id": "search-the-product-and-add-in-a-basket;user-want-to-search-laptop-product-and-add-in-to-basket-.;",
   "rows": [
     {
       "cells": [
         "Product"
       ],
-      "line": 15,
-      "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;1"
+      "line": 26,
+      "id": "search-the-product-and-add-in-a-basket;user-want-to-search-laptop-product-and-add-in-to-basket-.;;1"
     },
     {
       "cells": [
         "Dell Laptop"
       ],
-      "line": 16,
-      "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;2"
+      "line": 27,
+      "id": "search-the-product-and-add-in-a-basket;user-want-to-search-laptop-product-and-add-in-to-basket-.;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 10418883901,
+  "duration": 25139700000,
   "status": "passed"
 });
-formatter.background({
-  "line": 4,
-  "name": "User is on a HomePage",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
 formatter.scenario({
-  "line": 16,
-  "name": "User add product in a search field.",
+  "line": 27,
+  "name": "User want to search Laptop Product and add in to basket .",
   "description": "",
-  "id": "search-the-product-and-add-in-a-basket;user-add-product-in-a-search-field.;;2",
+  "id": "search-the-product-and-add-in-a-basket;user-want-to-search-laptop-product-and-add-in-to-basket-.;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 6,
+      "line": 8,
       "name": "@Smoke"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "User enter desire \"Dell Laptop\" name name in a search field",
   "matchedColumns": [
     0
@@ -97,19 +135,64 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "User click on a SearchButton",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e",
+  "line": 12,
+  "name": "User is on a Result Page verify the text \"Dell Laptop\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "User select RamSize",
   "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "User click on next page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "user select the product",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "User is on product Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User verify the price",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User click on add to cart",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "User click on cart",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "verify product is add on a cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User enter \"Monitor\" in a search field",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "User add product in basket",
+  "keyword": "And "
 });
 formatter.match({
   "arguments": [
@@ -118,41 +201,110 @@ formatter.match({
       "offset": 19
     }
   ],
-  "location": "ProductStepdefs.userEnterDesireNameNameInASearchField(String)"
+  "location": "LaptopStepdefs.userEnterDesireNameNameInASearchField(String)"
 });
 formatter.result({
-  "duration": 998614500,
+  "duration": 21415440300,
   "status": "passed"
 });
 formatter.match({
-  "location": "ProductStepdefs.userClickOnASearchButton()"
+  "location": "LaptopStepdefs.userClickOnASearchButton()"
 });
 formatter.result({
-  "duration": 3479508399,
+  "duration": 5932852000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Dell Laptop",
-      "offset": 43
+      "offset": 42
     }
   ],
-  "location": "ProductStepdefs.userIsOnAResultPageVerifyTheText(String)"
+  "location": "LaptopStepdefs.userIsOnAResultPageVerifyTheText(String)"
 });
 formatter.result({
-  "duration": 315643601,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c[\"Dell Laptop\"]\u003e but was:\u003c[Dell Laptop]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.amazon.pages.Product.userIsOnAResultPage(Product.java:41)\r\n\tat com.amazon.step_Def.ProductStepdefs.userIsOnAResultPageVerifyTheText(ProductStepdefs.java:36)\r\n\tat ✽.Then User is on a Result Page verify the text \u003c\"Dell Laptop\"\u003e(src/test/java/resources/feature_File/Product.feature:10)\r\n",
-  "status": "failed"
+  "duration": 193259700,
+  "status": "passed"
 });
 formatter.match({
-  "location": "ProductStepdefs.userSelectRamSize()"
+  "location": "LaptopStepdefs.userSelectRamSize()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5945841600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userClickOnNextPage()"
+});
+formatter.result({
+  "duration": 2726706700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userSelectTheProduct()"
+});
+formatter.result({
+  "duration": 4734346000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userIsOnProductPage()"
+});
+formatter.result({
+  "duration": 211097400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userVerifyThePrice()"
+});
+formatter.result({
+  "duration": 370709900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userClickOnAddToCart()"
+});
+formatter.result({
+  "duration": 448346900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userClickOnCart()"
+});
+formatter.result({
+  "duration": 7160775400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.verifyProductIsAddOnACart()"
+});
+formatter.result({
+  "duration": 169994800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Monitor",
+      "offset": 12
+    }
+  ],
+  "location": "LaptopStepdefs.userEnterInASearchField(String)"
+});
+formatter.result({
+  "duration": 2783872000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LaptopStepdefs.userAddProductInBasket()"
+});
+formatter.result({
+  "duration": 5832401000,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 2049198301,
+  "duration": 1450001900,
   "status": "passed"
 });
 });

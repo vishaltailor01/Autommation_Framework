@@ -5,6 +5,7 @@ import com.amazon.base_Page.Base_Page;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -68,8 +69,9 @@ public class Utility extends Base_Page {
      * This method will used to hover mouse on element
      */
     public void mouseHoverToElement(By by) {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(by)).perform();
+       // Actions actions = new Actions(driver);
+       // actions.moveToElement(driver.findElement(by)).perform();
+        driver.findElement(by).click();
     }
 
     public void mouseHoverToElement(WebElement element) {
@@ -89,6 +91,12 @@ public class Utility extends Base_Page {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().perform();
     }
+    public List<WebElement> mouseHoverToElementlist(WebElement element) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().perform();
+        return null;
+    }
+
 
     /**
      * This method will used to select drop down menu by visible text
@@ -151,6 +159,7 @@ public class Utility extends Base_Page {
         wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+
     /**
      * This method will used to wait web driver until visibility of element located by locator
      */
@@ -161,7 +170,7 @@ public class Utility extends Base_Page {
 
     public void waitUntilVisibilityOfElementLocated(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(driver, timeout);
-        wait.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     /**
@@ -187,7 +196,7 @@ public class Utility extends Base_Page {
     public void ifElementIsDisplayed(WebElement element) {
         try {
             if (element.isDisplayed()) {
-                clickOnElement(element);
+                mouseHoverToElementAndClick(element);
             }
         } catch (Exception e) {
 
@@ -220,7 +229,15 @@ public class Utility extends Base_Page {
      * This method will returns list of web elements
      */
     public List<WebElement> webElementList(By by) {
+
         return driver.findElements(by);
+    }
+    /**
+     * This method will returns list of web elements
+     */
+    public List<WebElement> webElementList(WebElement element) {
+
+        return driver.findElements((By) element);
     }
 
     /**
@@ -243,6 +260,7 @@ public class Utility extends Base_Page {
         driver.findElement(by).sendKeys(Keys.CONTROL + "a");
         driver.findElement(by).sendKeys(Keys.DELETE);
     }
+
 
     public void sendTabAndEnterKey(By by) {
         driver.findElement(by).sendKeys(Keys.TAB);
@@ -307,5 +325,6 @@ public class Utility extends Base_Page {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
+
 
 }

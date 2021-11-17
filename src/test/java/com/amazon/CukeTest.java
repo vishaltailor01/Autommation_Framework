@@ -35,6 +35,7 @@ public class CukeTest {
         String projectPath = System.getProperty("user.dir");
         String reportConfigPath = projectPath + "/src/test/java/resources/extent_Report/extent-config.xml";
         Reporter.loadXMLConfig(reportConfigPath);
+        Reporter.addScenarioLog("Scenario Logs");
         Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
         Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
         Reporter.setSystemInfo("Machine", "Windows 10" + "64 Bit");

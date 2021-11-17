@@ -1,4 +1,5 @@
-com\virginmedia\base_Page\Base_Page.class
-com\virginmedia\property_Reader\Property_Reader.class
-com\virginmedia\utility\Utility.class
-com\virginmedia\pages\Availability.class
+com\amazon\pages\Monitor.class
+com\amazon\base_Page\Base_Page.class
+com\amazon\pages\Laptop.class
+com\amazon\property_Reader\Property_Reader.class
+com\amazon\utility\Utility.class

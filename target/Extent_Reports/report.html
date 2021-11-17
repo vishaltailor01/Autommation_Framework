@@ -40,7 +40,6 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -54,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 12, 2021 07:28:01 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 17, 2021 10:01:13 AM</span>
 				</a>
 			</li>
 			<li>
@@ -80,8 +79,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -142,10 +139,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +154,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -172,10 +169,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -189,54 +186,97 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Search the product and add in a Basket</span>
-						<span class='test-time'>Nov 12, 2021 07:28:01 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 17, 2021 10:01:13 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 15s+625ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 1m 23s+445ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">User add product in a search field.</span>
+		<span class="desc-text">User want to search Laptop Product and add in to basket .</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
+		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@Smoke</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">User add product in a search field.</span>
+			<span class="bdd-step-name">User want to search Laptop Product and add in to basket .</span>
+				<div class='pre'>Scenario Logs</div>
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given User enter desire "Dell Laptop" name name in a search field</span>
+							<div class='pre'>user click on location Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='glow-toaster-footer']/span[1]/span'<br></div>
+							<div class='pre'>user click on search button[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //header/div[@id='navbar']/div[@id='nav-flyout-anchor']/div[13]/div[2]/div[4]/span[1]/span[1]/input[1]]<br></div>
+							<div class='pre'>user search product name [[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> id: twotabsearchtextbox]<br></div>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='5' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When User click on a SearchButton</span>
+							<div class='pre'>user click on search button[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> id: nav-search-submit-button]<br></div>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='6' class='node then fail' status='fail'><b>Then</b>
-						<span class="bdd-step-name">Then User is on a Result Page verify the text <"Dell Laptop"></span>
-							<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<["Dell Laptop"]> but was:<[Dell Laptop]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.amazon.pages.Product.userIsOnAResultPage(Product.java:41)
-	at com.amazon.step_Def.ProductStepdefs.userIsOnAResultPageVerifyTheText(ProductStepdefs.java:36)
-	at ✽.Then User is on a Result Page verify the text <"Dell Laptop">(src/test/java/resources/feature_File/Product.feature:10)
-</textarea></div>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User is on a Result Page verify the text "Dell Laptop"</span>
+							<div class='pre'>user is on a result page[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //span[contains(text(),'"Dell Laptop"')]]<br></div>
+							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node when skip' status='skip'><b>When</b>
+					<li test-id='7' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When User select RamSize</span>
-						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\Vishal\IdeaProjects\cloudPay/src/main/java/com/amazon/screen_shots/User_add_product_in_a_search_field.20211112072817.png"><i class='material-icons'>panorama</i></a></li>
-						</ul>
-							<div class='pre'>skipped</div>
+							<div class='pre'>user select the brand[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //div[@id='brandsRefinements']/ul/li[1]/span/a/div/label]<br></div>
+							<div class='pre'>User select the ram size [[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //*[@id="p_n_feature_twenty-three_browse-bin/7817222011"]/span/a/span]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on next page</span>
+							<div class='pre'>user click on next page  button[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //div[@class='a-text-center']/ul/li[3]/a]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When user select the product</span>
+							<div class='pre'>user click on select the product : [[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //span[contains(text(),'2020 Newest Dell Inspiron 15 3000 PC Laptop: 15.6"')]]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='10' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User is on product Page</span>
+							<div class='pre'>User is on product Page [[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //span[@id='productTitle']]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='11' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User verify the price</span>
+							<div class='pre'>user verify the price : [[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //span[@id='price_inside_buybox']]</div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on add to cart</span>
+							<div class='pre'>User click on add cart btn :[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //input[@id='add-to-cart-button']]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User click on cart</span>
+							<div class='pre'>user clickon cart :[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> xpath: //span[@id='attach-sidesheet-view-cart-button']/span/input]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And verify product is add on a cart</span>
+							<div class='pre'>User verify product add in a cart :[[ChromeDriver: chrome on WINDOWS (41a356d045cc2debe9df84a000ef963b)] -> id: sc-subtotal-amount-buybox]<br></div>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User enter "Monitor" in a search field</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User add product in basket</span>
+							<div class='pre'>User add product in basket</div>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
@@ -298,13 +338,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Smoke</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -319,9 +359,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 12, 2021 07:28:01 PM</td>
-										<td class='linked' test-id='3'>Search the product and add in a Basket.User add product in a search field..User add product in a search field.</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Nov 17, 2021 10:01:13 AM</td>
+										<td class='linked' test-id='3'>Search the product and add in a Basket.User want to search Laptop Product and add in to basket ..User want to search Laptop Product and add in to basket .</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -368,13 +408,13 @@
                             <div class='author-heading'>
                                 <span class='author-name'>VishalTailor</span>
                                 <span class='author-status right'>
-                                        <span class='label fail'>1</span>
+                                        <span class='label pass'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
                                     
-                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -389,9 +429,9 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Nov 12, 2021 07:28:01 PM</td>
-                                                <td class='linked' test-id='3'>Search the product and add in a Basket.User add product in a search field..User add product in a search field.</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td>Nov 17, 2021 10:01:13 AM</td>
+                                                <td class='linked' test-id='3'>Search the product and add in a Basket.User want to search Laptop Product and add in to basket ..User want to search Laptop Product and add in to basket .</td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -406,73 +446,6 @@
     <div class='subview-right left'>
         <div class='view-summary'>
             <h5 class='author-name'></h5>
-        </div>
-    </div>
-</div>
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.junit.ComparisonFailure</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Nov 12, 2021 07:28:16 PM</td>
-                                                        <td class='linked' test-id='6'>Search the product and add in a Basket.User add product in a search field..User add product in a search field..Then User is on a Result Page verify the text <"Dell Laptop"></td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<["Dell Laptop"]> but was:<[Dell Laptop]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.amazon.pages.Product.userIsOnAResultPage(Product.java:41)
-	at com.amazon.step_Def.ProductStepdefs.userIsOnAResultPageVerifyTheText(ProductStepdefs.java:36)
-	at ✽.Then User is on a Result Page verify the text <"Dell Laptop">(src/test/java/resources/feature_File/Product.feature:10)
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
         </div>
     </div>
 </div>
@@ -497,25 +470,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 12, 2021 07:28:01 PM</div>
+					<div class='panel-lead'>Nov 17, 2021 10:01:13 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 12, 2021 07:28:19 PM</div>
+			 		<div class='panel-lead'>Nov 17, 2021 10:02:38 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>18,563ms</div>
+					<div class='panel-lead'>85,484ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -576,11 +549,11 @@
 						</tr>
 						<tr>
 							<td>@Smoke</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -596,31 +569,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 2,
-				failGrandChild: 1,
+				passGrandChild: 13,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

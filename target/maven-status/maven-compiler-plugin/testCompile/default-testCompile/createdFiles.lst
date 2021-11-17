@@ -1,3 +1,3 @@
-com\virginmedia\Hooks.class
-com\virginmedia\step_Def\AvailabilityStepdefs.class
-com\virginmedia\CukeTest.class
+com\amazon\CukeTest.class
+com\amazon\Hooks.class
+com\amazon\step_Def\LaptopStepdefs.class
