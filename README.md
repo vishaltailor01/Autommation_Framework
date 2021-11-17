@@ -35,7 +35,7 @@ Then is the outcome. It’s the behaviour we expect from the system when this ac
 * JUnit (Unit Framework) - Data Driven Approach
 * Log4j (logging API) • Maven (Build Automation Tool)
 * Cucumber (write the test case in feature file help of gherkin language)
-* Apache POI API (Read-Write utilities for Excel - Test Data Handling) Eclipse/IntelliJ (Java Editor)
+*
 * Browser - Google Chrome/FireFox
 
 ## Automation Framework Architecture:
